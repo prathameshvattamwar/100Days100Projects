@@ -1,4 +1,4 @@
-<h1>100 Days 100 Mini Projects</h1>
+<h1>100 Days 100 Projects</h1>
 
 <p>Welcome to my 100 Days of Code Challenge! Over the next 100 days, I will be building 100 mini projects using HTML, CSS, and JavaScript. Each day will bring a new project, which will be added to this repository.</p>
 
