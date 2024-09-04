@@ -24,13 +24,18 @@
     <tbody>
         <tr>
             <td>01</td>
-            <td><p>Day 1 Project...</p></td>
-            <td><a href="#">Live Demo</a></td>
+            <td><p>Day 1 Gradient Background Generator</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day01_Gradient%20Background%20Generator/">Live Demo</a></td>
         </tr>
         <tr>
             <td>02</td>
-            <td><p>Day 2 project...</p></td>
-            <td><a href="#">Live Demo</a></td>
+            <td><p>Day 2 Image Filter Editing Effects</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day02_Image%20Filter%20Effects/">Live Demo</a></td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td><p>Day 3 Color Palette</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day03_Color%20Palette/">Live Demo</a></td>
         </tr>
         <!-- Add more rows as you complete each project -->
     </tbody>
