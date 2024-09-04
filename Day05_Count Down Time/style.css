@@ -1,0 +1,99 @@
+/* Import Poppins font */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a2e;
+    color: #fff;
+    overflow: hidden;
+}
+
+.countdown-container {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 60px;
+    padding: 15px;
+    margin: 0 5px;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 8px;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.input-group input:focus {
+    background-color: #0f3460;
+    outline: none;
+    transform: scale(1.05);
+}
+
+.input-group span {
+    font-size: 2rem;
+    color: #0f3460;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #e94560;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #e83e58;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+#celebration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 84, 85, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#celebration h1 {
+    font-size: 6rem;
+}
+
+#celebration p {
+    font-size: 2rem;
+}
+
+#celebration.visible {
+    opacity: 1;
+    pointer-events: all;
+}

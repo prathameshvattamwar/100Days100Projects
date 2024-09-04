@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Countdown Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="countdown-container">
+        <div class="input-group">
+            <input type="number" id="hours" placeholder="00" min="0">
+            <span>:</span>
+            <input type="number" id="minutes" placeholder="00" min="0">
+            <span>:</span>
+            <input type="number" id="seconds" placeholder="00" min="0">
+        </div>
+        <button id="startButton">Start Countdown</button>
+        <h1 id="countdown">00:00:00</h1>
+    </div>
+    <div id="celebration" class="hidden">
+        <h1>Time up!</h1>
+        <p>The countdown has finished!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

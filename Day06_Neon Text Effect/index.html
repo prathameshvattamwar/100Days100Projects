@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Neon Text</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text" id="neonText">Enter Text Input</h1>
+        <div class="controls">
+            <div class="left-column">
+                <label for="textInput">Text:</label>
+                <input type="text" id="textInput" placeholder="Enter your text" autocomplete="off"/>
+
+                <label for="fontStyleInput">Font Style:</label>
+                <select id="fontStyleInput" class="fs">
+                    <option value="Poppins">Poppins</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+
+                <label for="textColorInput">Text Color:</label>
+                <input type="color" id="textColorInput" value="#ffffff" class="cs"/>
+
+                <label for="colorInput1">Glow Color 1:</label>
+                <input type="color" id="colorInput1" value="#00ff00" class="cs"/>
+
+                <label for="colorInput2">Glow Color 2:</label>
+                <input type="color" id="colorInput2" value="#ff00ff" class="cs"/>
+            </div>
+            <div class="right-column">
+                <label for="fontSizeInput">Font Size:</label>
+                <input type="range" id="fontSizeInput" min="20" max="60" value="80" class="ranges" />
+
+                <label for="glowInput">Glow Intensity:</label>
+                <input type="range" id="glowInput" min="10" max="70" value="30" class="ranges" />
+
+                <label for="blurInput">Blur Spread (px):</label>
+                <input type="range" id="blurInput" min="0" max="20" value="3" class="ranges" />
+
+                <label for="opacityInput">Glow Opacity:</label>
+                <input type="range" id="opacityInput" min="0" max="1" step="0.1" value="0.6" class="ranges" />
+
+                <label for="flickerInput">Flicker Speed (s):</label>
+                <input type="range" id="flickerInput" min="0.5" max="3" step="0.1" value="1.5" class="ranges" />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Price Range Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="range-slider">
+        <h1>Price Range</h1>
+        <div class="slider">
+            <input type="range" min="0" max="1000" value="200" id="rangeMin" class="range-min">
+            <input type="range" min="0" max="1000" value="800" id="rangeMax" class="range-max">
+            <div class="range-highlight"></div>
+            <div id="minValueTooltip" class="tooltip">₹200</div>
+            <div id="maxValueTooltip" class="tooltip">₹800</div>
+        </div>
+        <div class="range-values">
+            <span id="minValue">₹200</span>
+            <span id="maxValue">₹800</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

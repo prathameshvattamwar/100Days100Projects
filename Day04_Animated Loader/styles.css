@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     background: linear-gradient(135deg, #ff0099, #493240); */
+    font-family: Arial, sans-serif;
+  background: #9700d9;
+}
+
+.loader-wrapper {
+    text-align: center;
+}
+
+.loader {
+    position: relative;
+    width: 80px;
+    height: 40px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 0.6s cubic-bezier(.5, .05, .1, .3) infinite;
+}
+
+.circle:nth-child(2) {
+    animation-delay: 0.2s;
+    left: 30px;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 0.4s;
+    left: 60px;
+}
+
+.shadow {
+    width: 20px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    animation: shadowMove 0.6s cubic-bezier(.5, .05, .1, .3) infinite;
+}
+
+.shadow:nth-child(5) {
+    animation-delay: 0.2s;
+    left: 30px;
+}
+
+.shadow:nth-child(6) {
+    animation-delay: 0.4s;
+    left: 60px;
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+        transform: scale(1);
+    }
+    50% {
+        top: -20px;
+        transform: scale(1.2);
+    }
+    100% {
+        top: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes shadowMove {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.loading-text {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    animation: fadeIn 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

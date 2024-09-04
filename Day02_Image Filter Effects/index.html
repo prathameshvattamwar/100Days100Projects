@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-image"></i> Image Filter Effects</h1>
+        <label for="upload" class="upload-btn">
+            <i class="fas fa-upload"></i> Choose an Image
+        </label>
+        <input type="file" id="upload" accept="image/*">
+        <div class="image-container">
+            <img id="image" src="" alt="Your Image">
+        </div>
+
+        <!-- Filter Options -->
+        <div class="slider-container">
+            <label for="blur"><i class="fas fa-adjust"></i> Blur: <span id="blurValue">0px</span></label>
+            <input type="range" id="blur" min="0" max="10" step="0.1" value="0">
+        </div>
+        <div class="slider-container">
+            <label for="brightness"><i class="fas fa-sun"></i> Brightness: <span id="brightnessValue">100%</span></label>
+            <input type="range" id="brightness" min="0" max="2" step="0.1" value="1">
+        </div>
+        <div class="slider-container">
+            <label for="contrast"><i class="fas fa-adjust"></i> Contrast: <span id="contrastValue">100%</span></label>
+            <input type="range" id="contrast" min="0" max="2" step="0.1" value="1">
+        </div>
+        <div class="slider-container">
+            <label for="saturate"><i class="fas fa-tint"></i> Saturate: <span id="saturateValue">100%</span></label>
+            <input type="range" id="saturate" min="0" max="2" step="0.1" value="1">
+        </div>
+        <div class="slider-container">
+            <label for="sepia"><i class="fas fa-portrait"></i> Sepia: <span id="sepiaValue">0%</span></label>
+            <input type="range" id="sepia" min="0" max="1" step="0.1" value="0">
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="button-container">
+            <button id="undo" class="control-btn" title="Undo"><i class="fas fa-undo"></i> Undo</button>
+            <button id="redo" class="control-btn" title="Redo"><i class="fas fa-redo"></i> Redo</button>
+            <button id="reset" class="control-btn" title="Reset All"><i class="fas fa-sync-alt"></i> Reset All</button>
+            <button id="download" class="control-btn" title="Download Image"><i class="fas fa-download"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

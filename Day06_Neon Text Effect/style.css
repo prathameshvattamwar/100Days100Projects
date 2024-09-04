@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.neon-text {
+    font-size: var(--font-size, 80px);
+    color: var(--text-color, #ffffff);
+    font-family: var(--font-family, 'Poppins'), sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+    animation: flicker var(--flicker-speed, 1.5s) infinite alternate;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.neon-text::before,
+.neon-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: var(--opacity, 0.6);
+    filter: blur(var(--blur, 3px));
+}
+
+.neon-text::before {
+    color: var(--color1, #00ff00);
+    text-shadow: 0 0 var(--glow-intensity, 30px) var(--color1, #00ff00);
+}
+
+.neon-text::after {
+    color: var(--color2, #ff00ff);
+    text-shadow: 0 0 var(--glow-intensity, 30px) var(--color2, #ff00ff);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    gap:30px;
+}
+
+.left-column{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 0 20px;
+}
+
+.controls label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.controls input[type="text"] {
+    width: 90%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.controls select,
+.controls input[type="color"],
+.controls input[type="range"] {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.fs{
+    border-radius: 5px;
+    padding: 8px 5px;
+    font-size: 14px;
+    margin: 5px 0;
+    min-width: 16vw;
+}
+
+.cs{
+    border-radius: 5px;
+    padding: 0px;
+    font-size: 14px;
+    min-width: 100%;
+    max-width: 16vw;
+    height: 50px;
+    margin: 5px auto;
+}
+
+.ranges{
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    .ranges{
+        max-width: 90%;
+    }
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0.5;
+    }
+    22% {
+        opacity: 0.7;
+    }
+}

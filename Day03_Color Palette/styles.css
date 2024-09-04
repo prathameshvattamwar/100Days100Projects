@@ -1,0 +1,224 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #6600cc;
+}
+
+button#toggleMode {
+    background-color: #6600cc;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.palette-controls {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.palette-controls input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.palette-controls input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+
+.palette-controls .btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.color-palette {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-palette .color-box {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-icon {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.preview {
+    margin-bottom: 20px;
+}
+
+.preview-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.preview-box p {
+    margin: 0;
+}
+
+.preview-box button {
+    background-color: #6600cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.accessibility-checker {
+    margin-bottom: 20px;
+}
+
+.accessibility-checker h2 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.accessibility-checker p {
+    margin: 5px 0;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+body.light-mode .container {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode header h1 {
+    color: #333;
+}
+
+body.light-mode button#toggleMode {
+    background-color: #333;
+    color: white;
+}
+
+body.light-mode .palette-controls .btn {
+    background-color: #ccc;
+    color: #333;
+}
+
+body.light-mode .preview-box {
+    background-color: #eee;
+}
+
+body.light-mode .preview-box button {
+    background-color: #333;
+}
+
+/* styles.css */
+.background-preview {
+    margin-bottom: 20px;
+}
+
+.background-preview h2 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.bg-color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.bg-color-btn {
+    background-color: #6600cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#startTour {
+    background-color: #6600cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+
+.introjs-tooltiptext{
+    color: #000 !important;
+}
+
+@media (max-width: 600px) {
+    .palette-controls {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

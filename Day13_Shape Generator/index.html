@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Shape Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced CSS Shape Generator</h1>
+        <div class="shape-container">
+            <div id="shape" class="shape square"></div>
+        </div>
+        <div class="controls">
+            <div class="buttons">
+                <button onclick="changeShape('square')">Square</button>
+                <button onclick="changeShape('circle')">Circle</button>
+                <button onclick="changeShape('triangle')">Triangle</button>
+                <button onclick="changeShape('oval')">Oval</button>
+                <button onclick="changeShape('pentagon')">Pentagon</button>
+                <button onclick="changeShape('hexagon')">Hexagon</button>
+                <button onclick="changeShapeColor()">Random Color</button>
+            </div>
+            <div class="sliders">
+                <label>Size: <input type="range" id="sizeSlider" min="50" max="200" value="100" oninput="changeSize(this.value)"></label>
+                <label>Border Radius: <input type="range" id="borderRadiusSlider" min="0" max="50" value="0" oninput="changeBorderRadius(this.value)"></label>
+                <label>Rotate: <input type="range" id="rotateSlider" min="0" max="360" value="0" oninput="rotateShape(this.value)"></label>
+                <label>Scale: <input type="range" id="scaleSlider" min="0.5" max="2" step="0.1" value="1" oninput="scaleShape(this.value)"></label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

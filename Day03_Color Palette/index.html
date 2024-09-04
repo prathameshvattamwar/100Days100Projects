@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <!-- Intro.js CDN for guide manual -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/5.1.0/introjs.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="step1">Color Palette Designer</h1>
+            <button id="toggleMode">Toggle Dark/Light Mode</button>
+        </header>
+        <section class="palette-controls" id="step2">
+            <input type="color" id="colorPicker">
+            <input type="text" id="colorName" placeholder="Color Name">
+            <button id="addColor" class="btn"><i class="fas fa-plus"></i> Add Color</button>
+            <button id="savePalette" class="btn"><i class="fas fa-save"></i> Save Palette</button>
+            <button id="loadPalette" class="btn"><i class="fas fa-folder-open"></i> Load Palette</button>
+            <button id="exportPalette" class="btn"><i class="fas fa-file-export"></i> Export Palette</button>
+        </section>
+        <section class="color-palette" id="step3"></section>
+        <section class="preview" id="step4">
+            <h2>Preview</h2>
+            <div class="preview-box">
+                <p>This is a preview text</p>
+                <button>Preview Button</button>
+            </div>
+        </section>
+        <section class="background-preview" id="step5">
+            <h2>Background Color Preview</h2>
+            <div class="bg-color-options">
+                <button class="bg-color-btn" id="applyBgColor">Apply Background Color</button>
+                <button class="bg-color-btn" id="resetBgColor">Reset Background Color</button>
+            </div>
+        </section>
+        <button id="startTour">Start Guide</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/5.1.0/intro.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

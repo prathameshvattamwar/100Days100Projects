@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Validator</h2>
+        <div class="input-container">
+            <input type="password" id="password" placeholder="Enter your password">
+            <span id="eye-icon" onclick="togglePassword()"><i class="fas fa-eye"></i></span>
+            <span id="copy-icon" onclick="copyPassword()"><i class="fa-solid fa-clipboard"></i></span>
+        </div>
+        <ul class="password-rules">
+            <li id="length" class="rule"><span class="circle"></span> At least 8 characters</li>
+            <li id="uppercase" class="rule"><span class="circle"></span> At least one uppercase letter</li>
+            <li id="lowercase" class="rule"><span class="circle"></span> At least one lowercase letter</li>
+            <li id="number" class="rule"><span class="circle"></span> At least one number</li>
+            <li id="special" class="rule"><span class="circle"></span> At least one special character (@, #, $, etc.)</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
