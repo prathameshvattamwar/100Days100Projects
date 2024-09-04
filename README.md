@@ -37,18 +37,14 @@
             <td><p>Day 3 Color Palette</p></td>
             <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day03_Color%20Palette/">Live Demo</a></td>
         </tr>
+        <tr>
+            <td>04</td>
+            <td><p>Day 4 Animated Loaded</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day04_Animated%20Loader/">Live Demo</a></td>
+        </tr>
         <!-- Add more rows as you complete each project -->
     </tbody>
 </table>
-
-_______________________________________________________________________________________________________________________________________________
-| Day  | Project Name        | Live Project Link                                                                                              |
-|------|---------------------|----------------------------------------------------------------------------------------------------------------|
-| Day 1| Project Name 1      | [View Project](https://prathameshvattamwar.github.io/100Days100projects/Day01_Gradient Background Generator/)  |
-| Day 2| Project Name 2      | [View Project](https://prathameshvattamwar.github.io/100Days100projects/Day02_Image Filter Effects/)           |
-| ...  | ...                 | ...                                                                                                            |
-| Day 100| Project Name 100  | [View Project](https://yourusername.github.io/100days100projects/Day100_ProjectName/)                          |
------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h2>License</h2>
 <p>This project is licensed under the MIT License - see the <a href="./LICENSE">LICENSE</a> file for details.</p>
