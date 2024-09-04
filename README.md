@@ -41,5 +41,14 @@
     </tbody>
 </table>
 
+_______________________________________________________________________________________________________________________________________________
+| Day  | Project Name        | Live Project Link                                                                                              |
+|------|---------------------|----------------------------------------------------------------------------------------------------------------|
+| Day 1| Project Name 1      | [View Project](https://prathameshvattamwar.github.io/100Days100projects/Day01_Gradient Background Generator/)  |
+| Day 2| Project Name 2      | [View Project](https://prathameshvattamwar.github.io/100Days100projects/Day02_Image Filter Effects/)           |
+| ...  | ...                 | ...                                                                                                            |
+| Day 100| Project Name 100  | [View Project](https://yourusername.github.io/100days100projects/Day100_ProjectName/)                          |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
 <h2>License</h2>
 <p>This project is licensed under the MIT License - see the <a href="./LICENSE">LICENSE</a> file for details.</p>
