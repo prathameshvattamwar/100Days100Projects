@@ -42,6 +42,51 @@
             <td><p>Day 4 Animated Loaded</p></td>
             <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day04_Animated%20Loader/">Live Demo</a></td>
         </tr>
+        <tr>
+            <td>05</td>
+            <td><p>Day 5 Count Down Timer</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day05_Count%20Down%20Time/">Live Demo</a></td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td><p>Day 6 Neon Text Effect</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day06_Neon%20Text%20Effect/">Live Demo</a></td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td><p>Day 7 Advanced Customizable Notepad</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day07_Notepad/">Live Demo</a></td>
+        </tr>
+        <tr>
+            <td>08</td>
+            <td><p>Day 8 Password Validator</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day08_Password%20Validator/">Live Demo</a></td>
+        </tr>
+        <tr>
+            <td>09</td>
+            <td><p>Day 9 Price Range Slider</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day09_Price%20Range%20Slider/">Live Demo</a></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><p>Day 10 Progress Tracker</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day10_Progress%20Tracker/">Live Demo</a></td>
+        </tr>
+         <tr>
+            <td>11</td>
+            <td><p>Day 11 Recipe Card</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day11_Recipe%20card/">Live Demo</a></td>
+        </tr>
+         <tr>
+            <td>12</td>
+            <td><p>Day 12 Scroll Progress Indicator</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day12_Scroll%20Progress%20Indicator/">Live Demo</a></td>
+        </tr>
+         <tr>
+            <td>13</td>
+            <td><p>Day 13 Shape Generator</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day13_Shape%20Generator/">Live Demo</a></td>
+        </tr>
         <!-- Add more rows as you complete each project -->
     </tbody>
 </table>
