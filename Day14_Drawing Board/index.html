@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Drawing Board</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Fabric.js CDN for advanced canvas manipulation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/37df75b44e.js" crossorigin="anonymous"></script>
+    <!-- Google Font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="toolbar-group">
+            <button id="draw">Draw <i class="fa-solid fa-pencil"></i></button>
+            <button id="erase">Erase <i class="fa-solid fa-eraser"></i></button>
+            <button id="rect">Rectangle <i class="fa-regular fa-square"></i></button>
+            <button id="circle">Circle <i class="fa-regular fa-circle"></i></button>
+            <button id="drawLine">Line <i class="fa-solid fa-minus"></i></button>
+            <button id="drawPolygon">Polygon <i class="fa-solid fa-draw-polygon"></i></button>
+        </div>
+        <div class="toolbar-group">
+            <button id="addText">Text <i class="fa-solid fa-font"></i></button>
+            <input type="text" id="textInput" placeholder="Enter text" style="display:none;">
+            <input type="number" id="fontSize" value="20" min="10" max="100" style="display:none;">
+        </div>
+        <div class="toolbar-group">
+            <button id="uploadImage">Upload Image <i class="fa-solid fa-image"></i></button>
+            <input type="file" id="imageUpload" style="display:none;">
+            <button id="cropImage">Crop Image <i class="fa-solid fa-crop"></i></button>
+        </div>
+        <div class="toolbar-group">
+            <button id="clear">Clear <i class="fa-solid fa-broom"></i></button>
+            <button id="undo">Undo <i class="fa-solid fa-rotate-left"></i></button>
+            <button id="redo">Redo <i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <div class="toolbar-group">
+            <button id="group">Group <i class="fa-solid fa-object-group"></i></button>
+            <button id="ungroup">Ungroup <i class="fa-solid fa-object-ungroup"></i></button>
+        </div>
+        <div class="toolbar-group">
+            <button id="toggleGrid">Toggle Grid <i class="fa-solid fa-th-large"></i></button>
+        </div>
+        <div class="toolbar-group">
+            <input type="color" id="colorPicker" value="#000000">
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+            <input type="color" id="bgColorPicker" value="#ffffff"> <!-- Background color picker -->
+        </div>
+        <div class="toolbar-group">
+            <button id="exportPNG">Export PNG <i class="fa-solid fa-file-image"></i></button>
+            <button id="exportJPEG">Export JPEG <i class="fa-solid fa-file-image"></i></button>
+            <button id="exportSVG">Export SVG <i class="fa-solid fa-file-code"></i></button>
+        </div>
+        <div class="toolbar-group">
+            <button id="settings">Settings <i class="fa-solid fa-cog"></i></button>
+            <div id="settingsMenu" style="display:none;">
+                <label><input type="checkbox" id="toggleDraw" checked> Draw</label>
+                <label><input type="checkbox" id="toggleText" checked> Text</label>
+                <label><input type="checkbox" id="toggleImage" checked> Image Upload</label>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="drawingBoard"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

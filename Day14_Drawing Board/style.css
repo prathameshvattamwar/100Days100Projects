@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 100%;
+    height: 80px; /* Increased height */
+    z-index: 10;
+}
+
+.toolbar-group {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar button,
+.toolbar input[type="color"],
+.toolbar input[type="range"],
+.toolbar input[type="text"],
+.toolbar input[type="number"] {
+    margin: 0 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+#drawingBoard {
+    border: none;
+    display: block;
+    background-color: #fff;
+    cursor: crosshair;
+    width: 100%;
+    height: calc(100vh - 60px); /* Full screen minus toolbar height */
+}
+
+#settingsMenu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #drawingBoard {
+        height: auto;
+        flex-grow: 1;
+    }
+}
