@@ -90,7 +90,7 @@
         <tr>
             <td>14</td>
             <td><p>Day 14 Drawing Board</p></td>
-            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day13_Shape%20Generator/">Live Demo</a></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day14_Drawing%20Board/">Live Demo</a></td>
         </tr>
         <!-- Add more rows as you complete each project -->
     </tbody>
