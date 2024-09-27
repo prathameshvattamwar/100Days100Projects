@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#pageNumbers {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.pagination-container button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pageNumbers button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#pageNumbers button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Design: Show only the current page number in mobile */
+@media (max-width: 768px) {
+    #pageNumbers button:not(.active) {
+        display: none;
+    }
+
+    .pagination-container button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    #pageNumbers button.active {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination-container {
+        gap: 5px;
+        justify-content: center;
+    }
+
+    #pageNumbers button.active {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .pagination-container button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
