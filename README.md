@@ -97,6 +97,16 @@
             <td><p>Day 15 Quiz App Demo</p></td>
             <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day15_Quiz%20App%20Demo/">Live Demo</a></td>
         </tr>
+         <tr>
+            <td>16</td>
+            <td><p>Day 16 Pagination</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day16_Pagination/">Live Demo</a></td>
+        </tr>
+         <tr>
+            <td>17</td>
+            <td><p>Day 17 Card Matching Game</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day17_matchingGame/">Live Demo</a></td>
+        </tr>
         <!-- Add more rows as you complete each project -->
     </tbody>
 </table>
