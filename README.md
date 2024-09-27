@@ -92,6 +92,11 @@
             <td><p>Day 14 Drawing Board</p></td>
             <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day14_Drawing%20Board/">Live Demo</a></td>
         </tr>
+        <tr>
+            <td>15</td>
+            <td><p>Day 15 Quiz App Demo</p></td>
+            <td><a href="https://prathameshvattamwar.github.io/100Days100Projects/Day15_Quiz%20App%20Demo/">Live Demo</a></td>
+        </tr>
         <!-- Add more rows as you complete each project -->
     </tbody>
 </table>
